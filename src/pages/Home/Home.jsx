@@ -81,24 +81,53 @@ function Home() {
         <div className='blog-section text-light py-5'>
             <div className='container d-flex flex-column align-items-center'>
                 <h2 className='text-center text-capitalize mb-5'>Latest on the blog</h2>
+              
+
+
                 <div className='row g-4'>
-                    {blogs.map((blog) => (
-                        <div key={blog.id} className='col-md-6 col-lg-4'>
-                            <Link to="/blog" className='text-decoration-none'>
-                                <Card className='h-100 shadow scale-hover-effect'>
-                                    <Card.Img variant="top" src={blog.img} />
-                                    <Card.Body className='p-md-5'>
-                                        <Card.Title>{blog.title}</Card.Title>
-                                        <Card.Text>{blog.description}</Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </Link>
+                    <div className='col-md-6 col-lg-4' id='card-component'>
+                        <Link to="/courses">
+                        <div className='card'>
+                            <img className='card-image' src={Blog1Img} alt='Course' />
+                            <div className='overlay'>
+                            <p className='card-text'>Courses</p>
+                            </div>
                         </div>
-                    ))}
-                </div>
-                <Link to="/blog">
-                    <button type='button' className='btn btn-danger btn-lg mt-5'>Read More Blogs</button>
-                </Link>
+                        </Link>
+                    </div>
+                    <div className='col-md-6 col-lg-4' id='card-component'>
+                        <Link to="/about">
+                        <div className='card'>
+                            <img className='card-image' src={Blog2Img} alt='About' />
+                            <div className='overlay'>
+                            <p className='card-text'>About</p>
+                            </div>
+                        </div>
+                        </Link>
+                    </div>
+
+                    <div className='col-md-6 col-lg-4' id='card-component'>
+                        <Link to="/blog">
+                        <div className='card'>
+                            <img className='card-image' src={Blog3Img} alt='About' />
+                            <div className='overlay'>
+                            <p className='card-text'>Blog</p>
+                            </div>
+                        </div>
+                        </Link>
+                    </div>
+                    <div className='col-md-6 col-lg-4' id='card-component'>
+                        <Link to="/contact">
+                        <div className='card'>
+                            <img className='card-image' src={Blog3Img} alt='About' />
+                            <div className='overlay'>
+                            <p className='card-text'>Contact US</p>
+                            </div>
+                        </div>
+                        </Link>
+                    </div>
+    </div>
+
             </div>
         </div>
     </div>
