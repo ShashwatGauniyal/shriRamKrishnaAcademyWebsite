@@ -36,8 +36,8 @@ function Home() {
         <header className='h-100 min-vh-100 d-flex align-items-center text-light'>
             <div className='container d-flex flex-column align-items-center'>
                 <h2>Welcome To</h2>
-                <h1 className='text-center fw-semibold'>Shri RamKrishna Academy</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, fugit? Doloremque deserunt ipsum eaque, dolor tempore, minima nisi debitis, et quas voluptatibus nam ex. Necessitatibus eligendi ratione expedita! Porro, ut.</p>
+                <h1 className='text-center fw-semibold'>Shri Ramkrishna Academy</h1>
+                <p></p>
                 <div className='d-flex flex-column flex-sm-row align-items-center'>
                     {/* Button change karne hai */}
                     <Link to="/courses">
