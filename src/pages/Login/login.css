@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: url('../../utils/images/blog3-img.jpg') no-repeat center center fixed;
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/blog3-img.jpg);
     background-size: cover;
 }
 

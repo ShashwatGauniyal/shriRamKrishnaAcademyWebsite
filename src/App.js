@@ -9,6 +9,7 @@ import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
 import Login from './pages/Login/login';
+import Facilities from './pages/Facilities/facilities';
 // pages import karne hai idhar
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
             <Nav className='me-auto justify-content-end w-100'>
               <Nav.Link href='/' className='text-uppercase'>Home</Nav.Link>
               <Nav.Link href='/courses' className='text-uppercase'>Our courses</Nav.Link>
+              <Nav.Link href='/facilities' className='text-uppercase'>Facilites</Nav.Link>
               <Nav.Link href='/about' className='text-uppercase'>About us</Nav.Link>
               <Nav.Link href='/blog' className='text-uppercase'>Blog</Nav.Link>
               <Nav.Link href='/contact' className='text-uppercase'>Get in touch</Nav.Link>
@@ -54,6 +56,7 @@ function App() {
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/login' element={<Login/>} />
+        <Route path='/facilities' element = {<Facilities/>}/>
         {/* routes define */}
       </Routes>
 

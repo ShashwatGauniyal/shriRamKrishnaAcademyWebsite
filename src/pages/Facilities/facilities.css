@@ -1,0 +1,44 @@
+.facilities-container {
+    padding-top: 0px; /* Adjust padding to match the height of your navbar */
+}
+
+.header-container {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/blog3-img.jpg);
+    padding: 500px 0;
+    text-align: center;
+    color: #fff; /* Set text color to white */
+}
+
+.facilities-content {
+    padding: 20px;
+}
+
+.facilities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.facility-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.facility-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.facility-card h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.facility-card p {
+    padding: 0 10px 10px;
+    color: #666;
+}
