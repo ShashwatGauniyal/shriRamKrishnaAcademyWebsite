@@ -1,49 +1,81 @@
 import React from 'react';
 import './facilities.css';
+import StartCoursesImg from '../../utils/images/start-courses-img.jpg';
 
 function Facilities() {
-    const facilities = [
-        {
-            title: "Science Labs",
-            description: "Our school is equipped with state-of-the-art science labs for Physics, Chemistry, and Biology.",
-            image: "path_to_your_lab_image.jpg"
-        },
-        {
-            title: "Library",
-            description: "The library has a vast collection of books, journals, and digital resources for students and teachers.",
-            image: "path_to_your_library_image.jpg"
-        },
-        {
-            title: "Computer Labs",
-            description: "Modern computer labs with the latest software and hardware for enhancing students' technological skills.",
-            image: "path_to_your_computer_lab_image.jpg"
-        },
-        {
-            title: "Sports Facilities",
-            description: "We have extensive sports facilities, including a football field, basketball court, and swimming pool.",
-            image: "path_to_your_sports_image.jpg"
-        },
-        {
-            title: "Art Room",
-            description: "A dedicated art room for students to explore their creativity through various art forms.",
-            image: "path_to_your_art_image.jpg"
-        }
-    ];
-
     return (
-        <div className='facilities-container'>
+        <div className='Facilities-page'>
             <header className='header-container'>
                 <h1>Our Facilities</h1>
             </header>
-            <div className="facilities-content">
-                <div className="facilities-grid">
-                    {facilities.map((facility, index) => (
-                        <div key={index} className="facility-card">
-                            <img src={facility.image} alt={facility.title} />
-                            <h3>{facility.title}</h3>
-                            <p>{facility.description}</p>
+
+            <div className='py-5 bg-light'>
+                <div className="facility-container">
+                    <div className='row d-flex align-items-center justify-content-around'>
+                        <div className='col-lg-5'>
+                            <h2 className='text-capitalize'>LAB</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, placeat.</p>
                         </div>
-                    ))}
+                        <div className='col-lg-5 mt-5 mt-lg-0'>
+                            <img src={StartCoursesImg} className='img-fluid' alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='py-5 bg-light'>
+                <div className="facility-container">
+                    <div className='row d-flex align-items-center justify-content-around'>
+                        <div className='col-lg-5'>
+                            <h2 className='text-capitalize'>Ground</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, placeat.</p>
+                        </div>
+                        <div className='col-lg-5 mt-5 mt-lg-0'>
+                            <img src={StartCoursesImg} className='img-fluid' alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='py-5 bg-light'>
+                <div className="facility-container">
+                    <div className='row d-flex align-items-center justify-content-around'>
+                        <div className='col-lg-5'>
+                            <h2 className='text-capitalize'>Class Rooms</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, placeat.</p>
+                        </div>
+                        <div className='col-lg-5 mt-5 mt-lg-0'>
+                            <img src={StartCoursesImg} className='img-fluid' alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='py-5 bg-light'>
+                <div className="facility-container">
+                    <div className='row d-flex align-items-center justify-content-around'>
+                        <div className='col-lg-5'>
+                            <h2 className='text-capitalize'>Infirmary</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, placeat.</p>
+                        </div>
+                        <div className='col-lg-5 mt-5 mt-lg-0'>
+                            <img src={StartCoursesImg} className='img-fluid' alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className='py-5 bg-light'>
+                <div className="facility-container">
+                    <div className='row d-flex align-items-center justify-content-around'>
+                        <div className='col-lg-5'>
+                            <h2 className='text-capitalize'>Canteen</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus, placeat.</p>
+                        </div>
+                        <div className='col-lg-5 mt-5 mt-lg-0'>
+                            <img src={StartCoursesImg} className='img-fluid' alt="" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
