@@ -8,7 +8,7 @@ import Courses from './pages/Courses/Courses';
 import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
-import Facilities from './pages/Facilities/facilities';
+import Facilities from './pages/Facilities/Facilities';
 import Academics from './pages/Academics/Academics'
 import Login from './pages/Login/login';
 // pages import karne hai idhar
@@ -27,7 +27,7 @@ function App() {
               <span className='mx-2 text-light lh-1 fw-semibold'>
                 Shri
                 <br></br>
-                Ramkrishna
+                RamKrishna
                 <br></br>
                 Academy
                 {/* Name Change karna hai */}
@@ -42,7 +42,7 @@ function App() {
               <Nav.Link href='/about' className='text-uppercase'>About us</Nav.Link>
               <Nav.Link href='/blog' className='text-uppercase'>Blog</Nav.Link>
               <Nav.Link href='/contact' className='text-uppercase'>Get in touch</Nav.Link>
-              <Nav.Link href='/facilities' className='text-uppercase'>Facilites</Nav.Link>
+              <Nav.Link href='/facilities' className='text-uppercase'>Facilities</Nav.Link>
               <Nav.Link href='/academics' className='text-uppercase'>Academics</Nav.Link>
               <Nav.Link href='/login' className='text-uppercase'>Login</Nav.Link>
               {/* Link karna hai yaha */}
@@ -57,9 +57,9 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/facilities' element = {<Facilities/>}/>
-        <Route path='/academics' element={<Academics/>} />
-        <Route path='/login' element={<Login/>} />
+        <Route path='/facilities' element = {<Facilities />}/>
+        <Route path='/academics' element={<Academics />} />
+        <Route path='/login' element={<Login />} />
         {/* routes define */}
       </Routes>
 
@@ -113,10 +113,10 @@ function App() {
                     <Link to="/courses" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Our courses</li>
                     </Link>
-                    <Link to="/contact" className='text-decoration-none text-danger'>
+                    <Link to="/academics" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Academics</li>
                     </Link>
-                    <Link to="/contact" className='text-decoration-none text-danger'>
+                    <Link to="/facilities" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Facilites</li>
                     </Link>
                     <Link to="/about" className='text-decoration-none text-danger'>

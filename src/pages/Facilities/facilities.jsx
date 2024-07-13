@@ -1,5 +1,5 @@
 import React from 'react';
-import './facilities.css';
+import './Facilities.css';
 import StartCoursesImg from '../../utils/images/start-courses-img.jpg';
 
 function Facilities() {
