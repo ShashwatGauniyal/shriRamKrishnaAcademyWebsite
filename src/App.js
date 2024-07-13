@@ -8,7 +8,7 @@ import Courses from './pages/Courses/Courses';
 import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
-import Facilities from './pages/Facilities/Facilities';
+import Facilities from './pages/Facilities/Facilities'
 import Academics from './pages/Academics/Academics'
 import Login from './pages/Login/login';
 // pages import karne hai idhar
@@ -57,7 +57,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/facilities' element = {<Facilities />}/>
+        <Route path='/facilities' element = {<Facilities />} />
         <Route path='/academics' element={<Academics />} />
         <Route path='/login' element={<Login />} />
         {/* routes define */}
@@ -117,7 +117,7 @@ function App() {
                       <li className='text-uppercase fw-semibold'>Academics</li>
                     </Link>
                     <Link to="/facilities" className='text-decoration-none text-danger'>
-                      <li className='text-uppercase fw-semibold'>Facilites</li>
+                      <li className='text-uppercase fw-semibold'>Facilities</li>
                     </Link>
                     <Link to="/about" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>About us</li>
