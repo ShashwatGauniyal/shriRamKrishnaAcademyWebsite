@@ -8,8 +8,9 @@ import Courses from './pages/Courses/Courses';
 import About from './pages/About/About';
 import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
-import Login from './pages/Login/login';
 import Facilities from './pages/Facilities/facilities';
+import Academics from './pages/Academics/Academics'
+import Login from './pages/Login/login';
 // pages import karne hai idhar
 function App() {
   return (
@@ -24,11 +25,11 @@ function App() {
               </svg>
               {/* svg icons cahnge karna hai */}
               <span className='mx-2 text-light lh-1 fw-semibold'>
-                React
+                Shri
                 <br></br>
-                University
+                Ramkrishna
                 <br></br>
-                London
+                Academy
                 {/* Name Change karna hai */}
               </span>
             </Link>
@@ -38,10 +39,11 @@ function App() {
             <Nav className='me-auto justify-content-end w-100'>
               <Nav.Link href='/' className='text-uppercase'>Home</Nav.Link>
               <Nav.Link href='/courses' className='text-uppercase'>Our courses</Nav.Link>
-              <Nav.Link href='/facilities' className='text-uppercase'>Facilites</Nav.Link>
               <Nav.Link href='/about' className='text-uppercase'>About us</Nav.Link>
               <Nav.Link href='/blog' className='text-uppercase'>Blog</Nav.Link>
               <Nav.Link href='/contact' className='text-uppercase'>Get in touch</Nav.Link>
+              <Nav.Link href='/facilities' className='text-uppercase'>Facilites</Nav.Link>
+              <Nav.Link href='/academics' className='text-uppercase'>Academics</Nav.Link>
               <Nav.Link href='/login' className='text-uppercase'>Login</Nav.Link>
               {/* Link karna hai yaha */}
             </Nav>
@@ -55,8 +57,9 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/login' element={<Login/>} />
         <Route path='/facilities' element = {<Facilities/>}/>
+        <Route path='/academics' element={<Academics/>} />
+        <Route path='/login' element={<Login/>} />
         {/* routes define */}
       </Routes>
 
@@ -109,6 +112,12 @@ function App() {
                     </Link>
                     <Link to="/courses" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Our courses</li>
+                    </Link>
+                    <Link to="/contact" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Academics</li>
+                    </Link>
+                    <Link to="/contact" className='text-decoration-none text-danger'>
+                      <li className='text-uppercase fw-semibold'>Facilites</li>
                     </Link>
                     <Link to="/about" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>About us</li>
