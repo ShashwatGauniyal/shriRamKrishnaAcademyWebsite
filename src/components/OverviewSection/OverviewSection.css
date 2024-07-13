@@ -1,0 +1,98 @@
+.blog-section {
+    background-color: #f8f9fa;
+  }
+  
+  .scroll-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+
+  .scroll-container::-webkit-scrollbar {
+    height: 12px; /* Height of the scrollbar */
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 7px; /* Roundness of the scrollbar thumb */
+  }
+  
+  .scroll-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Color of the scrollbar thumb when hovered */
+  }
+  
+  .scroll-container::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 10px; /* Roundness of the scrollbar track */
+  }
+
+  .card-wrapper {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    margin-right: 16px;
+    /* You can adjust the margin as needed */
+  }
+  
+  #card-component {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .card {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 400px; 
+    min-width: 350px;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.213);
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card:hover .overlay {
+    opacity: 0.8; /* Increase the opacity of the overlay */
+  }
+  
+  .card:hover .card-text {
+    opacity: 1; /* Ensure the text is fully visible */
+    font-size: 24px; /* Increase the font size for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better contrast */
+  }
+  
+  .card-text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.8; /* Make the text initially slightly visible */
+    transition: opacity 0.3s ease, font-size 0.3s ease; /* Smooth transition for visibility */
+  }
+  

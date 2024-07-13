@@ -1,0 +1,41 @@
+.Academics-page header {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/home-page-header.jpg);
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+}
+
+.Academics-page {
+    font-family: Arial, sans-serif;
+  }
+  
+  .header {
+    background: #333;
+    color: #fff;
+  }
+  
+  .Academics-section .scroll-container {
+    display: flex;
+    gap: 60px; /* Adjust the gap as needed */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .Academics-section .card-wrapper {
+    margin-bottom: 20px; /* Adjust the margin as needed */
+  }
+  
+  .Academics-section .card-footer-text {
+    font-weight: bold;
+  }
+  
+  .song-container {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+
+  
