@@ -57,7 +57,7 @@ function App() {
         <Route path='/about' element={<About />} />
         <Route path='/blog' element={<Blog />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path='/facilities' element = {<Facilities />} />
+        <Route path='/facilities' element={<Facilities />} />
         <Route path='/academics' element={<Academics />} />
         <Route path='/login' element={<Login />} />
         {/* routes define */}
