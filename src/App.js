@@ -10,6 +10,7 @@ import Blog from './pages/Blog/Blog';
 import Contact from './pages/Contact/Contact';
 import Facilities from './pages/Facilities/Facilities'
 import Academics from './pages/Academics/Academics'
+import Login from './pages/Login/login';
 // pages import karne hai idhar
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
               <Nav.Link href='/contact' className='text-uppercase'>Get in touch</Nav.Link>
               <Nav.Link href='/facilities' className='text-uppercase'>Facilities</Nav.Link>
               <Nav.Link href='/academics' className='text-uppercase'>Academics</Nav.Link>
+              <Nav.Link href='/login' className='text-uppercase'>Login</Nav.Link>
               {/* Link karna hai yaha */}
             </Nav>
           </Navbar.Collapse>
@@ -57,6 +59,7 @@ function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/facilities' element={<Facilities />} />
         <Route path='/academics' element={<Academics />} />
+        <Route path='/login' element={<Login />} />
         {/* routes define */}
       </Routes>
 

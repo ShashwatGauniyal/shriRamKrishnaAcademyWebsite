@@ -1,0 +1,91 @@
+.facilities-page {
+    padding-top: 0px; /* Adjust padding to match the height of your navbar */
+}
+
+.header-container {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/blog3-img.jpg);
+    padding: 357px 0;
+    text-align: center;
+    color: #fff; 
+}
+
+.Facilities-page header {
+    background-size: cover;
+    background-position: center;
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.facility-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.facility-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.213);
+    transition: transform 0.3s ease-in-out;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+.text-light {
+    color: #f8f9fa !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.fw-semibold {
+    font-weight: 600;
+}
+
+.h-100 {
+    height: 100% !important;
+}
+
+.min-vh-100 {
+    min-height: 100vh !important;
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.align-items-center {
+    align-items: center !important;
+}
+
+.flex-column {
+    flex-direction: column !important;
+}
+
+.justify-content-around {
+    justify-content: space-around !important;
+}

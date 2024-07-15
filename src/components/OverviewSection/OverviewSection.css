@@ -5,6 +5,7 @@
   .scroll-container {
     display: flex;
     overflow-x: auto;
+    overflow-y:hidden;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
@@ -95,4 +96,3 @@
     opacity: 0.8; /* Make the text initially slightly visible */
     transition: opacity 0.3s ease, font-size 0.3s ease; /* Smooth transition for visibility */
   }
-  
