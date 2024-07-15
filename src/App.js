@@ -128,6 +128,7 @@ function App() {
                     <Link to="/contact" className='text-decoration-none text-danger'>
                       <li className='text-uppercase fw-semibold'>Get In Touch</li>
                     </Link>
+                    
                     {/* link new pages */}
                   </ul>
                 </div>

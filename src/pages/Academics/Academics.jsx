@@ -58,5 +58,4 @@ function Academics() {
     </div>
   );
 }
-
 export default Academics;
